@@ -6,6 +6,7 @@ import type { ReactElement } from "react";
 import Fanta from "./pages/website/Fanta";
 import Cobalt from "./pages/website/Cobalt";
 import Lp from "./pages/website/Lp";
+import Nexus from "./pages/website/Nexus";
 
 function App() {
   interface AppRoute {
@@ -18,6 +19,7 @@ function App() {
     { path: "/fanta", element: <Fanta /> },
     { path: "/cobalt", element: <Cobalt /> },
     { path: "/lp", element: <Lp /> },
+    { path: "/nexus", element: <Nexus /> },
   ];
   return (
     <Routes>
