@@ -7,6 +7,7 @@ import Fanta from "./pages/website/Fanta";
 import Cobalt from "./pages/website/Cobalt";
 import Lp from "./pages/website/Lp";
 import Nexus from "./pages/website/Nexus";
+import Orbix from "./pages/website/Orbix";
 
 function App() {
   interface AppRoute {
@@ -20,6 +21,7 @@ function App() {
     { path: "/cobalt", element: <Cobalt /> },
     { path: "/lp", element: <Lp /> },
     { path: "/nexus", element: <Nexus /> },
+    { path: "/orbix", element: <Orbix /> },
   ];
   return (
     <Routes>
