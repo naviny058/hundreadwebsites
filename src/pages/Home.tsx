@@ -3,6 +3,7 @@ import finta from "../assets/webs/finta.png";
 import cobalt from "../assets/webs/cobalt.png";
 import lp from "../assets/webs/lp.png";
 import cube from "../assets/webs/cub.png";
+import orb from "../assets/webs/orb.png";
 
 interface Website {
   name: string;
@@ -18,9 +19,10 @@ function Home() {
     { name: "Cobalt", link: "/cobalt", img: cobalt },
     { name: "Lp", link: "/lp", img: lp },
     { name: "Nexus", link: "/nexus", img: cube },
+    { name: "orbix", link: "/orbix", img: orb },
   ];
   return (
-    <div className="h-screen w-full bg-gray-950 text-gray-100">
+    <div className="w-full bg-gray-950 p-4 text-gray-100">
       <div className="mx-auto max-w-6xl">
         <h1 className="py-4 text-2xl font-bold">100 of website</h1>
         <p className="max-w-md py-4 text-gray-500">
@@ -29,7 +31,7 @@ function Home() {
         </p>
 
         {/* all the website card will shown here s */}
-        <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">
           {Websites.map((website) => (
             <WebsiteCard key={website.name} website={website} />
           ))}
