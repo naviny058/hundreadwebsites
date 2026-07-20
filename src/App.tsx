@@ -11,6 +11,7 @@ import Orbix from "./pages/website/Orbix";
 import Dash from "./pages/website/Dashboard/Dash";
 import SignalSales from "./pages/website/SignalSales";
 import Lgpsm from "./pages/website/Lgpsm";
+import Todo from "./pages/website/Todo";
 
 function App() {
   interface AppRoute {
@@ -28,6 +29,7 @@ function App() {
     { path: "/orbix", element: <Orbix /> },
     { path: "/signal", element: <SignalSales /> },
     { path: "/dashboard", element: <Dash /> },
+    { path: "/todo", element: <Todo /> },
   ];
   return (
     <Routes>

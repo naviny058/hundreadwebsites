@@ -6,6 +6,7 @@ import cube from "../assets/webs/cub.png";
 import orb from "../assets/webs/orb.png";
 import sig from "../assets/webs/signal.png";
 import lpg from "../assets/webs/lpg.png";
+import todo from "../assets/webs/todo.png";
 
 interface Website {
   name: string;
@@ -17,6 +18,7 @@ interface websiteCardProps {
 }
 function Home() {
   const Websites: Website[] = [
+    { name: "Todo", link: "/todo", img: todo },
     { name: "lpg", link: "/lgpsm", img: lpg },
     { name: "Fanta", link: "/fanta", img: finta },
     { name: "Cobalt", link: "/cobalt", img: cobalt },
